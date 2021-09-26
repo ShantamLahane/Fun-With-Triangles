@@ -4,7 +4,9 @@ const outPut = document.querySelector("#output")
 
 const correctAnswers = ["90°", "right angled"]
 
-function calculateScore() {
+
+function calculateScore(event) {
+    event.preventDefault()
     let score = 0;
     let index = 0;
     const formResults = new FormData(quizForm)
@@ -12,9 +14,12 @@ function calculateScore() {
         if (value === correctAnswers[index]) {
             score = score + 1
         }
+        
         index = index + 1
     }
-    outPut.innerText = "Your score is  " + score
+
+    outPut.textContent = "Your score is  " + score
 }
 
-submitAnswerBtn.addEventListener("click", calculateScore)
+submitAnswerBtn.addEventListener("click", calculateScore);
+
