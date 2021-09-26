@@ -1,8 +1,6 @@
 :root {
      --color-1a:#10B981;
      --colore-1b:#ECFDF5;
-     --color-2a:#1D4ED8;
-     --off-white:#F3F4F6;
      
 }
 
@@ -133,7 +131,7 @@ body {
      padding: 0.4rem;
      border-radius: 0.3rem;
      cursor: pointer; 
-     margin-bottom: -30%;
+     margin-top: 1rem;
 
 }
 
